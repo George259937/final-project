@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Discussion - Fan Poll</title>
+    <link rel="stylesheet" href="pole.css">
+</head>
+<body>
+    <header>
+        <h1>Open Discussion & Fan Poll</h1>
+        <p>Share your thoughts and vote on the most controversial football moments!</p>
+    </header>
+
+    <main>
+       
+        <section class="form-section">
+            <h2>Submit Your Controversial Moment</h2>
+            <form id="submission-form">
+                <label for="moment">Your Controversial Moment:</label>
+                <textarea id="moment" placeholder="Describe the moment..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section class="poll-section">
+            <h2>Fan Poll</h2>
+            <p>Which moment do you think is the most controversial?</p>
+            <div id="poll-options"> <!--https://youtu.be/l0VuhtmLl1I?si=WCEEoPT-nOUZ9sI9 this helped me understand data-option-->
+                <button class="poll-btn" data-option="Maradona's Hand of God">Maradona's Hand of God</button>
+                <button class="poll-btn" data-option="2020 Ballon d'Or Cancellation">2020 Ballon d'Or Cancellation</button>
+                <button class="poll-btn" data-option="Neymar's 2015 Ballon d'Or Snub">Neymar's 2015 Ballon d'Or Snub</button>
+                <button class="poll-btn" data-option="Mo Salah Puskas Goal">Mo Salah Puskas Goal</button>
+            </div>
+            <div id="poll-results">
+            </div>
+        </section>
+    </main>
+
+    <script src="pole.js"></script>
+</body>
+</html>
